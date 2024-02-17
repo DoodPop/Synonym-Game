@@ -7,4 +7,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    <BrowserRouter basename={"/<Synonym-Game>/"}>
     <App />
   
-)
+);
+      
