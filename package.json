@@ -1,7 +1,7 @@
 {
   "name": "react-apap",
   "private": true,
-  "main": "main.jsx"
+  "main": "main.jsx",
   "homepage": "./",
   "version": "0.0.0",
   "type": "module",
