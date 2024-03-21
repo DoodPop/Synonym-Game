@@ -3,8 +3,9 @@ const app = express();
 const mysql = require('mysql2')
 const cors = require('cors')
 const db = mysql.createPool({
-    host: 'localhost',
+    host: 'localhost:',
     user: 'root',
+    port: 3001,
     password: 'password',
     database: 'wordChest',
   
