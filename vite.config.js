@@ -6,7 +6,7 @@ export default defineConfig({
   base: "/Synonym-Game/", 
   build: {
     rollupOptions: {
-      external: ['react-router-dom'],
+      external: [],
     },
   },
 });
