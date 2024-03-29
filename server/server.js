@@ -3,8 +3,8 @@ const app = express();
 const mysql = require('mysql2')
 const cors = require('cors')
 const db = mysql.createPool({
-    host: 'database-words.c9caes2aml9p.us-east-2.rds.amazonaws.com',
-    user: 'admin',
+    host: 'mysql-2d13b6b8-mysql-server123412.a.aivencloud.com',
+    user: 'AVNS_Yx9Skeu6PHhFJN9WmN4',
     port: 3306,
     password: 'password',
     database: 'wordchest',
