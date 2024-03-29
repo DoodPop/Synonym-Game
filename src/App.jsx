@@ -33,7 +33,7 @@ const Card = () => {
 
   const fetchWord = async () => {
     try {
-      let response = await axios.get('http://database-words.c9caes2aml9p.us-east-2.rds.amazonaws.com:3306/');
+      let response = await axios.get('https://database-words.c9caes2aml9p.us-east-2.rds.amazonaws.com:3306/');
       response = await response;
 
      
