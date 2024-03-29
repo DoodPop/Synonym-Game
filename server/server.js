@@ -3,11 +3,11 @@ const app = express();
 const mysql = require('mysql2')
 const cors = require('cors')
 const db = mysql.createPool({
-    host: 'localhost:',
-    user: 'root',
-    port: 3001,
+    host: 'database-words.c9caes2aml9p.us-east-2.rds.amazonaws.com',
+    user: 'admin',
+    port: 3306,
     password: 'password',
-    database: 'wordChest',
+    database: 'wordchest',
   
 });
 
