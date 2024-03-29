@@ -76,6 +76,7 @@ function getRandomDistractors(words, count) {
   return selectedWords;
 }
 
-app.listen(3306, () => {
-    console.log("running on port 3306");
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on port ${PORT}`);
 });
