@@ -1,4 +1,4 @@
-// Card.js
+
 
 import './styles.css';
 import React, { useState, useEffect } from 'react';
@@ -33,7 +33,7 @@ const Card = () => {
 
   const fetchWord = async () => {
     try {
-      let response = await axios.get('http://localhost:3001/');
+      let response = await axios.get('http://database-words.c9caes2aml9p.us-east-2.rds.amazonaws.com:3306/');
       response = await response;
 
      
@@ -63,7 +63,7 @@ console.log(newDistractorArray)
         { text: newDistractorArray[4], isCorrect: false },
       ];
 
-      // Shuffle the array
+     
       const shuffledAnswerChoices = shuffleArray(newAnswerChoices);
 
       setAnswerChoices(shuffledAnswerChoices);
