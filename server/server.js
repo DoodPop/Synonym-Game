@@ -5,7 +5,7 @@ const cors = require('cors')
 const db = mysql.createPool({
     host: 'mysql-2d13b6b8-mysql-server123412.a.aivencloud.com',
     user: 'avnadmin',
-    port: 3306,
+    port: 13860,
     password: 'AVNS_Yx9Skeu6PHhFJN9WmN4',
     database: 'wordchest',
   
