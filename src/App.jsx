@@ -33,7 +33,7 @@ const Card = () => {
 
   const fetchWord = async () => {
     try {
-      let response = await axios.get('http://ec2-18-219-250-233.us-east-2.compute.amazonaws.com:3001/');
+      let response = await axios.get('https://40.233.5.79:3001/');
       response = await response;
 
      
