@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const https = require('https');
+const fs = require('fs');
 const mysql = require('mysql2')
 const cors = require('cors')
 const db = mysql.createPool({
@@ -75,7 +77,11 @@ function getRandomDistractors(words, count) {
 
   return selectedWords;
 }
+const httpsOptions = {
+    key: fs.readFileSync('server.key'),
+    cert: fs.readFileSync('server.crt')
+};
 
-app.listen(3001, () => {
+https.createServer(httpsOptions, app).listen(3001, () => {
     console.log("running on port 3001");
 });
