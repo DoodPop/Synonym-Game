@@ -102,8 +102,10 @@ console.log(newDistractorArray)
       {btn && <button id="decorbtn"  onClick={fetchWord}>Next Word</button>}
      
     </div>
+    
+  <div>
      <p>Sorry for the inconvenience! To proceed, please open the browser console and accept the unsecure connection from the public IP address. I assure you it's safe. I'm currently unable to afford a domain name for the API, so I had to resort to using a self-signed SSL certificate. Thank you for your understanding and patience.</p>
-
+</div>
   );
 };
 export default Card;
