@@ -79,33 +79,34 @@ console.log(newDistractorArray)
     fetchWord();
   }, []);
 
-  return (
+return (
+  <div>
     <div className="box">
       <div className='contaiter'>
         <h2 className='poopert'>SYNONYMS</h2>
-      <h1> {isWord}</h1>
+        <h1> {isWord}</h1>
       </div>
-      
-     
+
       <ul>
         {answerChoices.map((choice, index) => (
-          <li  key={index} id='answer' className={choice.isCorrect ? 'correctAnswer' : ''}>
-           
+          <li key={index} id='answer' className={choice.isCorrect ? 'correctAnswer' : ''}>
             <button id="decorbtn" onClick={() => handleAnswerClick(choice.isCorrect)}>
               {choice.text}
             </button>
           </li>
         ))}
-      </ul><div className='container'> 
-      <h1>{feedback}</h1>
+      </ul>
+      
+      <div className='container'> 
+        <h1>{feedback}</h1>
       </div>
-      {btn && <button id="decorbtn"  onClick={fetchWord}>Next Word</button>}
-     
+      
+      {btn && <button id="decorbtn" onClick={fetchWord}>Next Word</button>}
     </div>
     
-  <div>
-     <p>Sorry for the inconvenience! To proceed, please open the browser console and accept the unsecure connection from the public IP address. I assure you it's safe. I'm currently unable to afford a domain name for the API, so I had to resort to using a self-signed SSL certificate. Thank you for your understanding and patience.</p>
-</div>
-  );
-};
+    <div>
+      <p>Sorry for the inconvenience! To proceed, please open the browser console and accept the unsecure connection from the public IP address. I assure you it's safe. I'm currently unable to afford a domain name for the API, so I had to resort to using a self-signed SSL certificate. Thank you for your understanding and patience.</p>
+    </div>
+  </div>
+);
 export default Card;
