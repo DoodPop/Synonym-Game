@@ -96,7 +96,10 @@ div ul li :hover::after{
   color: #c4ffc4;
   border-radius: 10px;
 }
-
+.warning{
+color: black;
+   font-family: 'Inter', sans-serif;
+}
 .contaiter{
 
   color: #529b52;
